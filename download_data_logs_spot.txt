@@ -1,0 +1,256 @@
+Unable to find image 'freqtradeorg/freqtrade:stable' locally
+stable: Pulling from freqtradeorg/freqtrade
+5c32499ab806: Pulling fs layer
+e7a38d824bdb: Pulling fs layer
+607d60ea18ba: Pulling fs layer
+ec93f6fefd13: Pulling fs layer
+0f5700a09ad3: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+990f936dcd2a: Pulling fs layer
+be3750635f60: Pulling fs layer
+371d3d892ef9: Pulling fs layer
+bc9f5b113ffe: Pulling fs layer
+4f4fb700ef54: Waiting
+990f936dcd2a: Waiting
+be3750635f60: Waiting
+371d3d892ef9: Waiting
+bc9f5b113ffe: Waiting
+ec93f6fefd13: Waiting
+e7a38d824bdb: Verifying Checksum
+e7a38d824bdb: Download complete
+607d60ea18ba: Verifying Checksum
+607d60ea18ba: Download complete
+5c32499ab806: Verifying Checksum
+5c32499ab806: Download complete
+ec93f6fefd13: Verifying Checksum
+ec93f6fefd13: Download complete
+4f4fb700ef54: Download complete
+0f5700a09ad3: Download complete
+990f936dcd2a: Verifying Checksum
+990f936dcd2a: Download complete
+5c32499ab806: Pull complete
+bc9f5b113ffe: Verifying Checksum
+bc9f5b113ffe: Download complete
+371d3d892ef9: Verifying Checksum
+371d3d892ef9: Download complete
+be3750635f60: Verifying Checksum
+be3750635f60: Download complete
+e7a38d824bdb: Pull complete
+607d60ea18ba: Pull complete
+ec93f6fefd13: Pull complete
+0f5700a09ad3: Pull complete
+4f4fb700ef54: Pull complete
+990f936dcd2a: Pull complete
+be3750635f60: Pull complete
+371d3d892ef9: Pull complete
+bc9f5b113ffe: Pull complete
+Digest: sha256:e33602a4285868a80b69a327739f3182fe2a7f81c0b27060ee6aa701e979a03a
+Status: Downloaded newer image for freqtradeorg/freqtrade:stable
+2025-12-06 03:27:05,413 - freqtrade - INFO - freqtrade 2025.11
+2025-12-06 03:27:05,828 - numexpr.utils - INFO - NumExpr defaulting to 4 threads.
+2025-12-06 03:27:06,883 - freqtrade.configuration.load_config - INFO - Using config: /freqtrade/user_data/config.json ...
+2025-12-06 03:27:06,885 - freqtrade.loggers - INFO - Enabling colorized output.
+2025-12-06 03:27:06,885 - freqtrade.loggers - INFO - Logfile configured
+2025-12-06 03:27:06,885 - freqtrade.loggers - INFO - Verbosity set to 0
+2025-12-06 03:27:06,886 - freqtrade.configuration.configuration - INFO - Using exchange hyperliquid
+2025-12-06 03:27:06,918 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2025-12-06 03:27:06,918 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/hyperliquid ...
+2025-12-06 03:27:06,919 - freqtrade.configuration.configuration - INFO - Using pairs ['.*']
+2025-12-06 03:27:06,919 - freqtrade.configuration.configuration - INFO - timeframes --timeframes: ['1m', '3m', '5m', '15m', '30m', '1h', '2h', '4h', '8h', '12h', '1d', '3d', '1w', '1M']
+2025-12-06 03:27:06,920 - freqtrade.configuration.configuration - INFO - Detected --new-pairs-days: 18
+2025-12-06 03:27:06,920 - freqtrade.configuration.configuration - INFO - Detected --trading-mode: spot
+2025-12-06 03:27:06,921 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2025-12-06 03:27:06,926 - freqtrade.exchange.check_exchange - INFO - Exchange "hyperliquid" is officially supported by the Freqtrade development team.
+2025-12-06 03:27:06,926 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2025-12-06 03:27:07,022 - freqtrade.exchange.exchange - INFO - Overriding exchange._ft_has with config params, result: {'stoploss_on_exchange': False, 'stop_price_param': 'stopLossPrice', 
+'stop_price_prop': 'stopLossPrice', 'stoploss_order_types': {}, 'stoploss_blocks_assets': True, 'order_time_in_force': ['GTC'], 'ohlcv_params': {}, 'ohlcv_has_history': True, 'ohlcv_partial_candle': 
+True, 'ohlcv_require_since': False, 'download_data_parallel_quick': False, 'always_require_api_keys': False, 'ohlcv_volume_currency': 'base', 'tickers_have_quoteVolume': True, 
+'tickers_have_percentage': True, 'tickers_have_bid_ask': False, 'tickers_have_price': True, 'trades_limit': 1000, 'trades_pagination': 'time', 'trades_pagination_arg': 'since', 'trades_has_history': 
+False, 'l2_limit_range': [20], 'l2_limit_range_required': True, 'l2_limit_upper': None, 'mark_ohlcv_price': 'mark', 'mark_ohlcv_timeframe': '8h', 'funding_fee_timeframe': '8h', 'ccxt_futures_name': 
+'swap', 'needs_trading_fees': False, 'order_props_in_contracts': ['amount', 'filled', 'remaining'], 'fetch_orders_limit_minutes': None, 'marketOrderRequiresPrice': True, 'exchange_has_overrides': 
+{'fetchTrades': False}, 'proxy_coin_mapping': {}, 'ws_enabled': True, 'has_delisting': False}
+2025-12-06 03:27:07,023 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2025-12-06 03:27:07,023 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.20
+2025-12-06 03:27:07,023 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'spot'}}
+2025-12-06 03:27:07,028 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'spot'}}
+2025-12-06 03:27:07,033 - freqtrade.exchange.exchange - INFO - Using Exchange "Hyperliquid"
+2025-12-06 03:27:07,034 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Hyperliquid'...
+2025-12-06 03:27:07,034 - freqtrade.exchange.exchange - INFO - Markets were not loaded. Loading them now..
+2025-12-06 03:27:10,721 - freqtrade.exchange.common - WARNING - _load_async_markets() returned exception: "Error in reload_markets due to ArgumentsRequired. Message: hyperliquid fetchHip3Markets() Too
+many DEXes found. Please specify a list of DEXes in the exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch markets from those DEXes only. The limit is set to 5 DEXes by default.". 
+Retrying still for 3 times.
+2025-12-06 03:27:15,022 - freqtrade.exchange.common - WARNING - _load_async_markets() returned exception: "Error in reload_markets due to ArgumentsRequired. Message: hyperliquid fetchHip3Markets() Too
+many DEXes found. Please specify a list of DEXes in the exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch markets from those DEXes only. The limit is set to 5 DEXes by default.". 
+Retrying still for 2 times.
+2025-12-06 03:27:19,532 - freqtrade.exchange.common - WARNING - _load_async_markets() returned exception: "Error in reload_markets due to ArgumentsRequired. Message: hyperliquid fetchHip3Markets() Too
+many DEXes found. Please specify a list of DEXes in the exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch markets from those DEXes only. The limit is set to 5 DEXes by default.". 
+Retrying still for 1 times.
+2025-12-06 03:27:23,884 - freqtrade.exchange.common - WARNING - _load_async_markets() returned exception: "Error in reload_markets due to ArgumentsRequired. Message: hyperliquid fetchHip3Markets() Too
+many DEXes found. Please specify a list of DEXes in the exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch markets from those DEXes only. The limit is set to 5 DEXes by default.". 
+Giving up.
+2025-12-06 03:27:23,885 - freqtrade.exchange.exchange - ERROR - Could not load markets.
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 666, in _api_reload_markets
+    await self._api_async.load_markets(reload=reload, params={})
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/base/exchange.py", line 341, in load_markets
+    raise e
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/base/exchange.py", line 333, in load_markets
+    result = await self.markets_loading
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/base/exchange.py", line 300, in load_markets_helper
+    markets = await self.fetch_markets(params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/hyperliquid.py", line 490, in fetch_markets
+    promises = await asyncio.gather(*rawPromises)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/hyperliquid.py", line 541, in fetch_hip3_markets
+    raise ArgumentsRequired(self.id + ' fetchHip3Markets() Too many DEXes found. Please specify a list of DEXes in the exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch markets from 
+those DEXes only. The limit is set to ' + str(defaultLimit) + ' DEXes by default.')
+ccxt.base.errors.ArgumentsRequired: hyperliquid fetchHip3Markets() Too many DEXes found. Please specify a list of DEXes in the exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch 
+markets from those DEXes only. The limit is set to 5 DEXes by default.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/common.py", line 171, in wrapper
+    return f(*args, **kwargs)
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 679, in _load_async_markets
+    markets = self.loop.run_until_complete(self._api_reload_markets(reload=reload))
+  File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 670, in _api_reload_markets
+    raise TemporaryError(
+        f"Error in reload_markets due to {e.__class__.__name__}. Message: {e}"
+    ) from e
+freqtrade.exceptions.TemporaryError: Error in reload_markets due to ArgumentsRequired. Message: hyperliquid fetchHip3Markets() Too many DEXes found. Please specify a list of DEXes in the 
+exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch markets from those DEXes only. The limit is set to 5 DEXes by default.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 666, in _api_reload_markets
+    await self._api_async.load_markets(reload=reload, params={})
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/base/exchange.py", line 341, in load_markets
+    raise e
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/base/exchange.py", line 333, in load_markets
+    result = await self.markets_loading
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/base/exchange.py", line 300, in load_markets_helper
+    markets = await self.fetch_markets(params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/hyperliquid.py", line 490, in fetch_markets
+    promises = await asyncio.gather(*rawPromises)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/hyperliquid.py", line 541, in fetch_hip3_markets
+    raise ArgumentsRequired(self.id + ' fetchHip3Markets() Too many DEXes found. Please specify a list of DEXes in the exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch markets from 
+those DEXes only. The limit is set to ' + str(defaultLimit) + ' DEXes by default.')
+ccxt.base.errors.ArgumentsRequired: hyperliquid fetchHip3Markets() Too many DEXes found. Please specify a list of DEXes in the exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch 
+markets from those DEXes only. The limit is set to 5 DEXes by default.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/common.py", line 171, in wrapper
+    return f(*args, **kwargs)
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 679, in _load_async_markets
+    markets = self.loop.run_until_complete(self._api_reload_markets(reload=reload))
+  File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 670, in _api_reload_markets
+    raise TemporaryError(
+        f"Error in reload_markets due to {e.__class__.__name__}. Message: {e}"
+    ) from e
+freqtrade.exceptions.TemporaryError: Error in reload_markets due to ArgumentsRequired. Message: hyperliquid fetchHip3Markets() Too many DEXes found. Please specify a list of DEXes in the 
+exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch markets from those DEXes only. The limit is set to 5 DEXes by default.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 666, in _api_reload_markets
+    await self._api_async.load_markets(reload=reload, params={})
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/base/exchange.py", line 341, in load_markets
+    raise e
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/base/exchange.py", line 333, in load_markets
+    result = await self.markets_loading
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/base/exchange.py", line 300, in load_markets_helper
+    markets = await self.fetch_markets(params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/hyperliquid.py", line 490, in fetch_markets
+    promises = await asyncio.gather(*rawPromises)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/hyperliquid.py", line 541, in fetch_hip3_markets
+    raise ArgumentsRequired(self.id + ' fetchHip3Markets() Too many DEXes found. Please specify a list of DEXes in the exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch markets from 
+those DEXes only. The limit is set to ' + str(defaultLimit) + ' DEXes by default.')
+ccxt.base.errors.ArgumentsRequired: hyperliquid fetchHip3Markets() Too many DEXes found. Please specify a list of DEXes in the exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch 
+markets from those DEXes only. The limit is set to 5 DEXes by default.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/common.py", line 171, in wrapper
+    return f(*args, **kwargs)
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 679, in _load_async_markets
+    markets = self.loop.run_until_complete(self._api_reload_markets(reload=reload))
+  File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 670, in _api_reload_markets
+    raise TemporaryError(
+        f"Error in reload_markets due to {e.__class__.__name__}. Message: {e}"
+    ) from e
+freqtrade.exceptions.TemporaryError: Error in reload_markets due to ArgumentsRequired. Message: hyperliquid fetchHip3Markets() Too many DEXes found. Please specify a list of DEXes in the 
+exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch markets from those DEXes only. The limit is set to 5 DEXes by default.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 666, in _api_reload_markets
+    await self._api_async.load_markets(reload=reload, params={})
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/base/exchange.py", line 341, in load_markets
+    raise e
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/base/exchange.py", line 333, in load_markets
+    result = await self.markets_loading
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/base/exchange.py", line 300, in load_markets_helper
+    markets = await self.fetch_markets(params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/hyperliquid.py", line 490, in fetch_markets
+    promises = await asyncio.gather(*rawPromises)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.13/site-packages/ccxt/async_support/hyperliquid.py", line 541, in fetch_hip3_markets
+    raise ArgumentsRequired(self.id + ' fetchHip3Markets() Too many DEXes found. Please specify a list of DEXes in the exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch markets from 
+those DEXes only. The limit is set to ' + str(defaultLimit) + ' DEXes by default.')
+ccxt.base.errors.ArgumentsRequired: hyperliquid fetchHip3Markets() Too many DEXes found. Please specify a list of DEXes in the exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch 
+markets from those DEXes only. The limit is set to 5 DEXes by default.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 706, in reload_markets
+    retrier(self._load_async_markets, retries=retries)(reload=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/exchange/common.py", line 183, in wrapper
+    return wrapper(*args, **kwargs)
+  File "/freqtrade/freqtrade/exchange/common.py", line 183, in wrapper
+    return wrapper(*args, **kwargs)
+  File "/freqtrade/freqtrade/exchange/common.py", line 183, in wrapper
+    return wrapper(*args, **kwargs)
+  File "/freqtrade/freqtrade/exchange/common.py", line 186, in wrapper
+    raise ex
+  File "/freqtrade/freqtrade/exchange/common.py", line 171, in wrapper
+    return f(*args, **kwargs)
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 679, in _load_async_markets
+    markets = self.loop.run_until_complete(self._api_reload_markets(reload=reload))
+  File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 670, in _api_reload_markets
+    raise TemporaryError(
+        f"Error in reload_markets due to {e.__class__.__name__}. Message: {e}"
+    ) from e
+freqtrade.exceptions.TemporaryError: Error in reload_markets due to ArgumentsRequired. Message: hyperliquid fetchHip3Markets() Too many DEXes found. Please specify a list of DEXes in the 
+exchange.options["fetchMarkets"]["hip3"]["dex"] parameter to fetch markets from those DEXes only. The limit is set to 5 DEXes by default.
+2025-12-06 03:27:23,895 - freqtrade - ERROR - Markets were not loaded.
